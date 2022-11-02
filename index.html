@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Placement Portal
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#204584">
+    <meta name="msapplication-navbutton-color" content="#204584">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#204584">
+    <link rel="icon" >
+  </head>
+  <body>
+    
+     <div id="home" class="section">
+      <img src="img/background.svg" class="home-background">
+      <div class="home-text">
+        <span class="heading">Placement Portal</span><br>
+        <h2 style="max-width: 400px">Passion is the difference between having a job or having a career.</h2><br>
+        <div>
+         
+            <a href="javascript:void(0)" onclick="showLoginForm()"  class="blue-background"> Click here to Login</a>
+         </div>
+        
+      </div>
+      <div class="employees-image" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <img src="img/team.png" style="width:70%;">
+      </div>
+    </div>
+
+    <div class="complete-page-overlay hidden">
+    <div class="form-box login-box">
+      <div class="close-bar">
+        <a href="javascript:void(0)" onclick="closeForm()"><i class="fas fa-times"></i></a>
+      </div>
+
+      <div class="tab-bar">
+        <div class="tab active" onclick="switchToTabPane(this, 0)" >Placement officer</div>
+        <div class="tab" onclick="switchToTabPane(this, 1)" >Student</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane" data-paneid="0" style="padding: 40px 50px; text-align: center;">
+          <img src="img/enterprise.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+          <input type="textbox" class="textbox" placeholder=" Officer Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <a  type="button" class="button" style="width:100%;  margin: 10px 0px;" href="/officer.html">Login</a>
+          
+        </div>
+        <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
+          <img src="img/graduate.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+          <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <a type="button" class="button" style="width:100%; margin: 10px 0px;"  href="/student.html" >Login</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    
+
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+ 
+  </body>
+</html>
